@@ -1,0 +1,31 @@
+:root {
+  --primary: #c73b7c;
+  --secondary: #ed742e;
+  --tertiary: #48a0d3;
+  --dark: #14161a;
+  --light: #f5f6f8;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; padding: 0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif; background: var(--light); color: var(--dark); }
+.container { max-width: 1100px; margin: 0 auto; padding: 24px; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 16px 0; }
+header .brand { display: flex; align-items: center; gap: 16px; font-weight: 800; letter-spacing: 0.5px; }
+header .brand img { height: 40px; width: auto; }
+nav a { margin-left: 16px; text-decoration: none; color: var(--dark); opacity: 0.8; }
+nav a:hover { opacity: 1; }
+.hero { background: white; border-radius: 24px; padding: 48px; box-shadow: 0 10px 30px rgba(0,0,0,0.06); display: grid; gap: 16px; }
+.hero h1 { font-size: 42px; margin: 0 0 8px 0; }
+.hero p.lead { font-size: 18px; opacity: 0.85; }
+.cta { display: inline-block; padding: 14px 22px; border-radius: 999px; background: var(--primary); color: white; text-decoration: none; font-weight: 700; }
+.cta:hover { transform: translateY(-1px); box-shadow: 0 6px 18px rgba(0,0,0,0.12); }
+.badge-popular { display: inline-block; background: var(--tertiary); color: white; padding: 6px 12px; border-radius: 999px; font-size: 12px; font-weight: 800; letter-spacing: 0.5px; }
+.grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 18px; margin-top: 18px; }
+.card { background: white; border-radius: 18px; padding: 20px; box-shadow: 0 6px 18px rgba(0,0,0,0.05); }
+.card h3 { margin: 0 0 8px 0; }
+.price { font-size: 28px; font-weight: 800; margin: 6px 0 14px 0; }
+.card.popular { outline: 3px solid var(--tertiary); }
+.footer { margin-top: 40px; font-size: 14px; opacity: 0.8; }
+button.primary, .button.primary { background: var(--primary); color: white; border: none; padding: 10px 16px; border-radius: 10px; font-weight: 700; }
+button.primary:hover, .button.primary:hover { filter: brightness(1.05); }
+a { color: var(--primary); }
+@media (max-width: 900px) { .grid { grid-template-columns: 1fr; } .hero { padding: 28px; } }
