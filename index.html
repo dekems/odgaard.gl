@@ -4,9 +4,9 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Konsulentfirmaet ODGAARD</title>
-  <meta name="description" content="Independent consultant helping municipalities and utilities with finance, governance, and strategy in Greenland and Denmark." />
+  <meta name="description" content="Independent consultant helping municipalities and utilities with finance, governance, regulation (telecom & competition), and strategy in Greenland and Denmark." />
   <meta property="og:title" content="Konsulentfirmaet ODGAARD" />
-  <meta property="og:description" content="Independent consultant helping municipalities and utilities with finance, governance, and strategy." />
+  <meta property="og:description" content="Independent consultant helping municipalities and utilities with finance, governance, regulation, and strategy." />
   <meta property="og:type" content="website" />
   <meta property="og:image" content="assets/og-image.jpg" />
   <meta name="theme-color" content="#C73B7C" />
@@ -32,15 +32,14 @@
     html,body{height:100%}
     body{
       margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
-      background: radial-gradient(1200px 600px at 10% -10%, rgba(199,59,124,.15), transparent 60%),
-                  radial-gradient(1000px 600px at 90% 10%, rgba(72,160,211,.12), transparent 60%),
-                  var(--bg);
+      /* Solid background (ensfarvet) */
+      background: var(--bg);
       color:var(--text);
       line-height:1.6;
     }
     a{color:var(--primary); text-decoration:none}
     a:hover{ text-decoration:underline }
-    header{ position:sticky; top:0; backdrop-filter:saturate(140%) blur(6px); background:linear-gradient(to bottom, rgba(15,23,42,.85), rgba(15,23,42,.45)); border-bottom:1px solid rgba(148,163,184,.15);}
+    header{ position:sticky; top:0; backdrop-filter:saturate(140%) blur(6px); background:linear-gradient(to bottom, rgba(15,23,42,.85), rgba(15,23,42,.45)); border-bottom:1px solid rgba(148,163,184,.15);}    
     .wrap{ max-width:var(--max); margin:0 auto; padding:0 20px; }
     .nav{ display:flex; align-items:center; justify-content:space-between; padding:14px 0; }
     .brand { display:flex; align-items:center; gap:12px; font-weight:700; }
@@ -67,13 +66,15 @@
     .list{ margin:0; padding-left:18px }
     .list li{ margin:6px 0 }
 
+    .headshot{ width:100%; height:auto; display:block; border-radius:16px; border:1px solid rgba(148,163,184,.2); box-shadow:0 10px 30px rgba(2,8,23,.35); }
+
     footer{ color:var(--muted); border-top:1px solid rgba(148,163,184,.15); padding:26px 0 36px; margin-top:36px }
     .small{ font-size:.92rem }
     .muted{ color:var(--muted) }
     .sep{ opacity:.4; padding:0 8px }
     .inline-form{ display:flex; gap:10px; flex-wrap:wrap }
     .input{ background:#0b1226; border:1px solid rgba(148,163,184,.25); border-radius:12px; padding:12px 14px; color:var(--text); min-width:260px }
-      .logo { height:28px; width:auto; display:block; }
+    .logo { height:28px; width:auto; display:block; }
     @media (max-width: 520px){ .logo{ height:22px } }
   </style>
 </head>
@@ -89,7 +90,7 @@
     <section class="wrap hero">
       <div class="kicker">Finance • Governance • Strategy</div>
       <h1>Helping municipalities & utilities make better decisions.</h1>
-      <p class="lead">I advise on budgeting, financial governance, infrastructure projects (harbours, WtE, utilities), and organisational turnaround. Pragmatic. Data‑driven. Greenland & Denmark.</p>
+      <p class="lead">I advise on budgeting, financial governance, utilities & waste-to-energy, and telecom and competition regulation. Pragmatic. Data‑driven.</p>
       <p style="margin-top:22px"><a class="cta" href="#contact">Book an intro call</a></p>
     </section>
 
@@ -97,20 +98,20 @@
       <div class="grid">
         <article class="card">
           <h3>Budget & financial oversight</h3>
-          <p class="muted small">Multi‑year budgets • cash‑flow • grants • ERP/Prisme • quarterly follow‑ups</p>
-        </article>
-        <article class="card">
-          <h3>Projects & procurement</h3>
-          <p class="muted small">Harbour expansions • waste‑to‑energy • tenders • vendor management</p>
-        </article>
-        <article class="card">
-          <h3>Governance & board work</h3>
-          <p class="muted small">A/S ownership • board materials • risk & compliance • policy</p>
+          <p class="muted small">Multi‑year budgets • Cash‑flow • Grants • ERP/Prisme • Quarterly follow‑ups</p>
         </article>
         <article class="card">
           <span class="pill">Popular</span>
+          <h3>Regulation & market design</h3>
+          <p class="muted small">Telecom (SMP/wholesale, cost models) • Competition/Antitrust • Market studies • Consultation responses</p>
+        </article>
+        <article class="card">
+          <h3>Governance & board work</h3>
+          <p class="muted small">A/S ownership • Board materials • Risk & compliance • Policy</p>
+        </article>
+        <article class="card">
           <h3>Interim leadership</h3>
-          <p class="muted small">CFO/City Manager cover • stabilisation • handover & mentoring</p>
+          <p class="muted small">CFO/City Manager cover • Stabilisation • Handover & Mentoring</p>
         </article>
       </div>
     </section>
@@ -118,7 +119,7 @@
     <section class="wrap section two-col">
       <div>
         <h2>About</h2>
-        <p>Former CFO and Acting City Manager at Kommune Qeqertalik. I combine municipal finance with on‑the‑ground experience from Greenland’s infrastructure and utility sectors. I work fast, keep things simple, and leave teams stronger than I found them.</p>
+        <p>Former CFO at Kommune Qeqertalik. I combine municipal finance with hands‑on experience from Greenland’s utilities and infrastructure. I work fast, keep things simple, and leave teams stronger than I found them.</p>
         <ul class="list">
           <li>Delivered financing for <strong>DKK 500m</strong> WtE projects (Nuuk & Sisimiut).</li>
           <li>Quarterly budget processes with actionable dashboards and follow‑ups.</li>
@@ -126,9 +127,10 @@
         </ul>
       </div>
       <aside class="card">
-        <h3>Quick facts</h3>
-        <p class="small"><strong>Locations:</strong> Nuuk • Aasiaat • Copenhagen (by arrangement)</p>
-        <p class="small"><strong>Languages:</strong> Danish • English • Greenlandic (working)</p>
+        <img class="headshot" src="assets/NOJ.jpg" alt="Portrait of Nicolai Odgaard Jensen" />
+        <h3 style="margin-top:14px">Quick facts</h3>
+        <p class="small"><strong>Locations:</strong> Nuuk • Qeqertarsuaq • Copenhagen (by arrangement)</p>
+        <p class="small"><strong>Languages:</strong> Danish • English</p>
         <p class="small"><strong>Typical engagement:</strong> 1–6 months • 1–3 days/week</p>
       </aside>
     </section>
@@ -147,8 +149,8 @@
 
   <footer>
     <div class="wrap small">
-      <div>© <span id="y"></span> Nicolai Jensen — CVR: 38810707</div>
-      <div style="margin-top:6px" class="muted">Made with a single HTML file. Hosted on Netlify/Vercel/GitHub Pages.</div>
+      <div>© <span id="y"></span> Konsulentfirmaet ODGAARD — CVR: 38810707</div>
+      <div style="margin-top:6px" class="muted">Hosted on GitHub Pages.</div>
     </div>
   </footer>
 
