@@ -1,9 +1,0 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="256" viewBox="0 0 1024 256">
-  <rect width="1024" height="256" fill="#f5f6f8"/>
-  <g>
-    <text x="32" y="120" font-family="Inter, Arial, sans-serif" font-weight="700" font-size="72" fill="#c73b7c">Konsulentfirmaet</text>
-    <text x="32" y="195" font-family="Inter, Arial, sans-serif" font-weight="900" font-size="96" fill="#14161a">ODGAARD</text>
-  </g>
-  <circle cx="960" cy="64" r="40" fill="#48a0d3"/>
-  <rect x="900" y="140" width="120" height="24" rx="12" fill="#ed742e"/>
-</svg>
